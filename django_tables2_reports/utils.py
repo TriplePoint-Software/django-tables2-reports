@@ -32,7 +32,7 @@ def create_report_http_response(table, request):
     report = table.as_report(request, report_format=report_format)
     extension = get_extension_report(report_format)
     filename = '%s.%s' % (table.param_report, extension)
-    response = HttpResponse(report, content_type=REPORT_CONTENT_TYPES[extension])
+    response = HttpResponse(report.content, content_type=REPORT_CONTENT_TYPES[extension])
     response['Content-Disposition'] = 'attachment; filename=%s' % filename
     response = table.treatement_to_response(response, report_format=report_format)
     return response
