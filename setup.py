@@ -17,7 +17,7 @@
 import os
 from setuptools import setup, find_packages
 
-__version__ = "0.0.11"
+__version__ = "0.0.12"
 
 
 def read(*rnames):
