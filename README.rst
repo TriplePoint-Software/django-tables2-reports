@@ -4,6 +4,8 @@
 django-tables2-reports
 ======================
 
+Fork of abondened https://github.com/goinnn/django-tables2-reports
+
 .. image:: https://travis-ci.org/goinnn/django-tables2-reports.png?branch=master
     :target: https://travis-ci.org/goinnn/django-tables2-reports
 

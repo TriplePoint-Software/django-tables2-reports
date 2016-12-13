@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Copyright (c) 2012-2013 by Pablo Martín <goinnn@gmail.com>
+# Copyright (c) 2016 by Max Syabro <maxim@syabro.com>
 #
 # This software is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Lesser General Public License as published by
@@ -17,16 +17,19 @@
 import os
 from setuptools import setup, find_packages
 
+__version__ = "0.0.11"
+
 
 def read(*rnames):
     return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
 
+
 setup(
-    name="django-tables2-reports",
-    version="0.0.11",
-    author="Pablo Martin",
-    author_email="goinnn@gmail.com",
-    description="With django-tables2-reports you can get a report (CSV, XLS) of any django-tables2 with minimal changes to your project",
+    name="tp-django-tables2-reports",
+    version=__version__,
+    author="Max Syabro",
+    author_email="maxim@syabro.com",
+    description="With django-tables2-reports you can get a report (CSV, XLS) of any django-tables2 with minimal changes to your project. Fork of abondened https://github.com/goinnn/django-tables2-reports",
     long_description=(read('README.rst') + '\n\n' + read('CHANGES.rst')),
     classifiers=[
         'Development Status :: 4 - Beta',
@@ -37,7 +40,7 @@ setup(
     ],
     license="LGPL 3",
     keywords="django,tables,django-tables2,reports,CSV,XLS",
-    url='https://github.com/goinnn/django-tables2-reports',
+    url='https://github.com/TriplePoint-Software/django-tables2-reports',
     packages=find_packages(),
     include_package_data=True,
     zip_safe=False,
